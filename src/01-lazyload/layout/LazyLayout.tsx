@@ -3,7 +3,8 @@ import { LazyPage1, LazyPage2, LazyPage3 } from "../pages"
 
 const LazyLayout = () => {
     return (
-        <div>LazyLayout Page
+        <div>
+            <h1>LazyLayout Page</h1>
             <ul>
                 <li>
                     <NavLink to='lazy1'>Lazy1</NavLink>
