@@ -3,8 +3,6 @@ import { BrowserRouter, NavLink, Navigate, Route, Routes } from 'react-router-do
 import logo from '../logo.svg';
 import { routes } from './routes';
 
-
-
 export const Navigation = () => {
     return (
         <Suspense
