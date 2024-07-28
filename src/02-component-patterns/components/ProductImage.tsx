@@ -9,8 +9,6 @@ interface Props {
     style?: CSSProperties
 }
 
-export const ProductImage = ({ img, className, style }: Props) => {
-    const { product } = useContext(ProductContext);
 export const ProductImage = ({ img, className, style }: Props ) => {
 
     const { product } = useContext( ProductContext );

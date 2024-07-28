@@ -24,7 +24,7 @@ export interface Props {
 
 export const ProductCard = ({ children, product, className, style }: Props ) => {
 
-    const { counter, increaseBy } = useProduct();
+    const { counter, increaseBy } = useProductHook();
 
     return (
         <Provider value={{
