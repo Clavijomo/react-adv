@@ -13,15 +13,6 @@ export interface Props {
     style?: CSSProperties;
 }
 
-
-export interface Props {
-    product: Product;
-    children?: React.ReactElement | React.ReactElement[];
-    className?: string;
-    style?: React.CSSProperties 
-}
-
-
 export const ProductCard = ({ children, product, className, style }: Props ) => {
 
     const { counter, increaseBy } = useProductHook();
