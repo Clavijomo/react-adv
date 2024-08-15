@@ -1,6 +1,7 @@
 import { ProductButtons, ProductCard, ProductImage, ProductTitle } from '../components';
 import { products } from '../data/product';
 import { useShoppingCart } from '../hooks/useShoppingCart';
+import '../styles/custom-styles.css';
 
 export const ShoppingPage = () => {
     const {
