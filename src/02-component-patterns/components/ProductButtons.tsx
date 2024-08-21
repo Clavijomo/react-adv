@@ -1,6 +1,6 @@
-import { CSSProperties, useCallback, useContext, useEffect } from "react"
+import { CSSProperties, useCallback, useContext } from "react";
 import styles from '../styles/styles.module.css';
-import { ProductContext } from "./ProductCard"
+import { ProductContext } from "./ProductCard";
 
 interface Props {
     className?: string
@@ -13,7 +13,7 @@ export const ProductButtons = ({ className, style }: Props) => {
     const isMaxReached = useCallback(() => (
         !!maxCount && counter === maxCount
     ), [maxCount, counter])
-
+    
     return (
         <div
             style={style}
