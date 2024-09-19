@@ -1,6 +1,6 @@
 import { useFormik } from 'formik';
-import * as Yup from 'yup';
 import '../styles/styles.css';
+import { ValidationUpSchema } from '../validation/validationSchema';
 
 export const FormikYupPage = () => {
     const {
@@ -17,17 +17,7 @@ export const FormikYupPage = () => {
         onSubmit: (values) => {
             console.log(values);
         },
-        validationSchema: Yup.object({
-            firstName: Yup.string()
-                .max(15, 'Debe tener 15 caracteres o menos')
-                .required('Requerido'),
-            lastName: Yup.string()
-                .max(15, 'Debe tener 10 caracteres o menos')
-                .required('Requerido'),
-            email: Yup.string()
-                .email('Debe tener un formato válido')
-                .required('Requerido')
-        }),
+        validationSchema: ValidationUpSchema
     });
 
     return (
