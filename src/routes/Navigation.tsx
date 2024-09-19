@@ -5,6 +5,18 @@ import {
     Routes
 } from 'react-router-dom';
 
+import {
+  DynamicForm,
+  FormikAbstraction,
+  FormikBasicPage,
+  FormikComponents,
+  FormikYupPage,
+  RegisterPage,
+  RegisterFormikPage,
+} from '../03-forms/pages'
+
+
+
 import logo from '../logo.svg';
 import {
     DynamicForm,
